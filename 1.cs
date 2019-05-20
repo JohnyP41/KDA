@@ -28,11 +28,11 @@ namespace KDA1
 
             List<float> range_x = new List<float>();
             List<float> range_y = new List<float>();
-            for (int x = 0; x<=k; x++)
+            for (int x = 0; x<k; x++)
             {
                 range_x.Add(-1 + t);
-                range_y.Add(-1 + t + s);
                 t += s;
+                range_y.Add(-1 + t + s);
             }
 
             List<float> output = new List<float>();
@@ -50,7 +50,7 @@ namespace KDA1
 
             float delta = max - min;
             int i = 0;
-            for(int x=0;x<=k;x++)
+            for(int x=0;x<k;x++)
             {
                 Console.WriteLine("[x= " + range_x[x] + " y= " + range_y[x] + "]\t");
             }
